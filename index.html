@@ -1,48 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-slate-950">
 <head>
   <meta charset="UTF-8" />
-  <title>RezScan · Corrections Technology Platform</title>
+  <title>RezScan™ Technologies · Driving CHANGE While Maintaining Security</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RezScan™ Technologies is a next-generation corrections technology platform built for secure facilities. Built for Corrections. By Corrections. Driving CHANGE while maintaining security." />
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .orbitron { font-family: 'Orbitron', system-ui, sans-serif; }
+    :root {
+      --rezscan-blue: #0ea5e9;
+      --rezscan-dark: #020617;
+      --rezscan-accent: #22c55e;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .orbitron {
+      font-family: 'Orbitron', system-ui, sans-serif;
+    }
+    .glass {
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.24), rgba(15,23,42,0.98));
+      backdrop-filter: blur(18px);
+    }
+    .rezscan-border {
+      border-image: linear-gradient(120deg, #22c55e, #0ea5e9) 1;
+    }
   </style>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center">
-  <div class="max-w-xl mx-auto px-6 py-10 text-center">
-    <div class="inline-flex items-center gap-3 mb-6">
-      <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500/10 border border-sky-400/40">
-        <span class="orbitron text-sky-400 text-xl">RZ</span>
+<body class="min-h-full bg-slate-950 text-slate-100">
+  <!-- Background glow -->
+  <div class="pointer-events-none fixed inset-0 opacity-50">
+    <div class="absolute -top-24 -left-32 h-64 w-64 rounded-full bg-sky-500 blur-3xl"></div>
+    <div class="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-emerald-500 blur-3xl"></div>
+  </div>
+
+  <!-- Page wrapper -->
+  <div class="relative z-10 min-h-screen flex flex-col">
+
+    <!-- Top nav -->
+    <header class="w-full border-b border-slate-800/80 bg-slate-950/75 backdrop-blur">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <!-- Simple logo mark -->
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 border border-sky-400/40 shadow-md shadow-sky-900/60">
+            <span class="orbitron text-sky-400 text-lg tracking-tight">RZ</span>
+          </div>
+          <div>
+            <div class="orbitron text-xl font-semibold tracking-wide text-slate-50">
+              RezScan<span class="align-top text-[0.6rem] ml-0.5">™</span> Technologies
+            </div>
+            <div class="text-xs text-slate-400">
+              Built for Corrections. By Corrections.
+            </div>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-6 text-xs font-medium">
+          <a href="/" class="text-sky-400">Home</a>
+          <span class="text-slate-500 cursor-default">Vision</span>
+          <a href="mailto:Kenneth.Shaw@RezScan.net" class="hover:text-sky-300 transition">
+            Contact
+          </a>
+        </nav>
       </div>
-      <div class="text-left">
-        <div class="orbitron text-2xl font-semibold text-slate-50">RezScan</div>
-        <div class="text-xs text-slate-400">Corrections Technology Platform</div>
+    </header>
+
+    <!-- Main content -->
+    <main class="flex-1">
+      <section class="mx-auto max-w-6xl px-4 pt-10 pb-16 md:pt-14 md:pb-20">
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+          <!-- Hero text -->
+          <div>
+            <p class="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-sky-400 mb-4">
+              Next-Generation Corrections Technology Platform
+            </p>
+
+            <h1 class="orbitron text-4xl md:text-5xl font-extrabold text-slate-50 tracking-tight mb-3">
+              Driving CHANGE
+              <span class="block text-[1.85rem] md:text-[2rem] text-slate-300 mt-1">
+                While Maintaining Security.
+              </span>
+            </h1>
+
+            <!-- CHANGE expansion -->
+            <div class="text-[0.75rem] md:text-xs text-slate-400 mb-5 leading-relaxed">
+              <span class="font-semibold text-sky-300">CHANGE</span>
+              <span class="inline-block mt-1">
+                &nbsp;=&nbsp;
+                <span class="font-semibold text-slate-200">C</span>orrections ·
+                <span class="font-semibold text-slate-200">H</span>ardening ·
+                <span class="font-semibold text-slate-200">A</span>udit ·
+                <span class="font-semibold text-slate-200">N</span>etwork ·
+                <span class="font-semibold text-slate-200">G</span>overnance ·
+                <span class="font-semibold text-slate-200">E</span>ducation
+              </span>
+            </div>
+
+            <p class="text-sm md:text-[0.95rem] text-slate-300 mb-6 max-w-xl">
+              RezScan<span class="align-top text-[0.55rem] ml-0.5">™</span> Technologies is a next-generation platform
+              engineered for secure correctional environments. Designed from inside the system, it focuses on
+              strengthening security, modernizing digital oversight, and supporting controlled access to technology
+              in ways that align with real-world facility operations.
+            </p>
+
+            <p class="text-xs text-slate-400 mb-7 max-w-xl">
+              Built for Corrections. By Corrections. RezScan is being developed by a corrections professional who
+              understands the balance between safety, control, and responsible modernization.
+            </p>
+
+            <!-- Meta + soft CTA -->
+            <div class="flex flex-wrap items-center gap-3 mb-4 text-[0.7rem]">
+              <span class="inline-flex items-center rounded-full border border-sky-500/50 bg-sky-500/10 px-3 py-1 text-sky-100">
+                Early-stage platform · Vision preview
+              </span>
+              <span class="inline-flex items-center rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1 text-slate-300">
+                Production details & modules intentionally withheld for security.
+              </span>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-[0.7rem] text-slate-400">
+                To discuss the vision, roadmap, or controlled demonstrations, contact:<br />
+                <a href="mailto:Kenneth.Shaw@RezScan.net"
+                   class="text-sky-300 hover:text-sky-200 underline decoration-sky-400/60">
+                  Kenneth.Shaw@RezScan.net
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Right-side: Pillars card -->
+          <div class="glass rounded-2xl border rezscan-border border-slate-700/70 px-6 py-6 shadow-2xl shadow-sky-900/70">
+            <h2 class="orbitron text-lg font-semibold text-slate-50 mb-3">
+              High-Level Focus Areas
+            </h2>
+            <p class="text-[0.78rem] text-slate-300 mb-4">
+              RezScan is being designed around four core domains that matter most in secure facilities.
+              Specific capabilities, tools, and implementation details are intentionally not listed here
+              for operational security.
+            </p>
+
+            <div class="space-y-3 text-[0.8rem]">
+              <!-- Security -->
+              <div class="rounded-xl border border-slate-800 bg-slate-950/70 px-4 py-3 flex flex-col gap-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-slate-100">Security</span>
+                  <span class="text-[0.6rem] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/40">
+                    Safety First
+                  </span>
+                </div>
+                <p class="text-slate-400 text-[0.75rem]">
+                  Built with a security-first mindset, RezScan prioritizes controlled access, integrity of systems,
+                  and alignment with facility safety requirements.
+                </p>
+              </div>
+
+              <!-- Audits & Oversight -->
+              <div class="rounded-xl border border-slate-800 bg-slate-950/70 px-4 py-3 flex flex-col gap-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-slate-100">Audits & Digital Oversight</span>
+                  <span class="text-[0.6rem] px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/40">
+                    Accountability
+                  </span>
+                </div>
+                <p class="text-slate-400 text-[0.75rem]">
+                  Designed to support clearer digital trails and more effective review, helping staff understand
+                  what is happening on approved systems without overwhelming complexity.
+                </p>
+              </div>
+
+              <!-- Network Intelligence -->
+              <div class="rounded-xl border border-slate-800 bg-slate-950/70 px-4 py-3 flex flex-col gap-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-slate-100">Network Intelligence</span>
+                  <span class="text-[0.6rem] px-2 py-0.5 rounded-full bg-fuchsia-500/15 text-fuchsia-300 border border-fuchsia-500/40">
+                    Visibility
+                  </span>
+                </div>
+                <p class="text-slate-400 text-[0.75rem]">
+                  Focused on improving visibility into approved technology environments so facilities can better
+                  understand how systems, devices, and connections are behaving over time.
+                </p>
+              </div>
+
+              <!-- Education Support -->
+              <div class="rounded-xl border border-slate-800 bg-slate-950/70 px-4 py-3 flex flex-col gap-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-slate-100">Secure Education Support</span>
+                  <span class="text-[0.6rem] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/40">
+                    Opportunity
+                  </span>
+                </div>
+                <p class="text-slate-400 text-[0.75rem]">
+                  Aims to support modern learning experiences in ways that respect security boundaries, giving
+                  residents access to structured technology where it can safely be offered.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-5 border-t border-slate-800 pt-3 text-[0.68rem] text-slate-500">
+              This page provides only a high-level vision. Detailed architecture, modules, and operational
+              capabilities are reserved for controlled discussions with approved stakeholders.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950/90">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-2">
+        <p class="text-[0.7rem] text-slate-500">
+          © <span id="year"></span> RezScan<span class="align-top text-[0.55rem] ml-0.5">™</span> Technologies.
+          All rights reserved.
+        </p>
+        <p class="text-[0.7rem] text-slate-500 text-center md:text-right">
+          RezScan™ is an unregistered trademark. Use and deployment of any related tools or services
+          is subject to agency policy and applicable law.
+        </p>
       </div>
-    </div>
-
-    <h1 class="orbitron text-3xl font-bold mb-3">Coming Soon</h1>
-    <p class="text-sm text-slate-300 mb-6">
-      RezScan is an in-development technology platform supporting secure corrections and education environments.
-      A limited preview is currently available for select partners and stakeholders.
-    </p>
-
-    <p class="text-xs text-slate-400 mb-6">
-      If you need access to more detailed information or a live preview, please contact:
-      <br />
-      <a href="mailto:Kenneth.Shaw@RezScan.net" class="text-sky-300 hover:text-sky-200 underline">
-        Kenneth.Shaw@RezScan.net
-      </a>
-    </p>
-
-    <p class="text-[0.7rem] text-slate-500">
-      © <span id="year"></span> RezScan. All rights reserved.
-    </p>
+    </footer>
   </div>
 
   <script>
+    // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
