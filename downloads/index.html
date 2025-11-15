@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Downloads · RezScan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .orbitron { font-family: 'Orbitron', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <div class="max-w-5xl mx-auto px-4 py-6">
+    <header class="flex items-center justify-between mb-6">
+      <a href="/" class="flex items-center gap-3">
+        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-500/10 border border-sky-400/40">
+          <span class="orbitron text-sky-400 text-base">RZ</span>
+        </div>
+        <div>
+          <div class="orbitron text-lg font-semibold text-slate-50">RezScan</div>
+          <div class="text-xs text-slate-400">Downloads</div>
+        </div>
+      </a>
+      <nav class="flex items-center gap-4 text-xs">
+        <a href="/" class="hover:text-sky-300">Home</a>
+        <a href="/docs/" class="hover:text-sky-300">Docs</a>
+      </nav>
+    </header>
+
+    <h1 class="orbitron text-2xl md:text-3xl font-bold mb-2">Downloads</h1>
+    <p class="text-sm text-slate-300 mb-6 max-w-2xl">
+      This page provides installers, tools, and utilities related to the RezScan platform.
+      Only deploy these tools in environments where you have explicit authorization.
+    </p>
+
+    <!-- Example security note -->
+    <div class="mb-6 rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-xs text-amber-100">
+      <span class="font-semibold">Notice:</span> Many RezScan tools are designed for secure, managed
+      corrections environments. Consult your local policies and IT governance before installation.
+    </div>
+
+    <!-- Downloads grid -->
+    <div class="space-y-4 text-sm">
+      <!-- SessionGuard Agent -->
+      <section class="rounded-xl border border-slate-800 bg-slate-900/60 px-4 py-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+          <h2 class="font-semibold text-slate-50">SessionGuard Agent</h2>
+          <span class="text-[0.65rem] px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/40">
+            Windows · Installer
+          </span>
+        </div>
+        <p class="text-xs text-slate-300 mb-2">
+          Lightweight agent that reports concurrent logons and session activity back to SessionGuard.
+        </p>
+        <div class="flex flex-wrap items-center gap-3 text-xs">
+          <!-- TODO: Update href once you upload the file -->
+          <a href="/downloads/SessionGuardAgent.exe"
+             class="inline-flex items-center rounded-lg bg-sky-500 px-3 py-1.5 font-medium text-slate-950 hover:bg-sky-400 transition">
+            Download EXE
+          </a>
+          <span class="text-slate-500">
+            Version: 0.1.0 (placeholder) · Platform: Windows 10/11
+          </span>
+        </div>
+      </section>
+
+      <!-- NetScan AI Tools -->
+      <section class="rounded-xl border border-slate-800 bg-slate-900/60 px-4 py-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+          <h2 class="font-semibold text-slate-50">NetScan AI Tools</h2>
+          <span class="text-[0.65rem] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/40">
+            Toolkit · Scripts
+          </span>
+        </div>
+        <p class="text-xs text-slate-300 mb-2">
+          Network discovery and profiling utilities used by the NetScan AI dashboard.
+        </p>
+        <div class="flex flex-wrap items-center gap-3 text-xs">
+          <a href="/downloads/NetScanTools.zip"
+             class="inline-flex items-center rounded-lg bg-sky-500 px-3 py-1.5 font-medium text-slate-950 hover:bg-sky-400 transition">
+            Download ZIP
+          </a>
+          <span class="text-slate-500">
+            Includes: discovery, port scanner, profiling modules.
+          </span>
+        </div>
+      </section>
+
+      <!-- MDOC Audit Suite -->
+      <section class="rounded-xl border border-slate-800 bg-slate-900/60 px-4 py-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+          <h2 class="font-semibold text-slate-50">MDOC Audit Suite</h2>
+          <span class="text-[0.65rem] px-2 py-0.5 rounded-full bg-fuchsia-500/15 text-fuchsia-300 border border-fuchsia-500/40">
+            PowerShell · Python
+          </span>
+        </div>
+        <p class="text-xs text-slate-300 mb-2">
+          A collection of auditing tools for browser history, concurrent logons, and policy alignment.
+        </p>
+        <div class="flex flex-wrap items-center gap-3 text-xs">
+          <a href="/downloads/MDOC-Audit-Suite.zip"
+             class="inline-flex items-center rounded-lg bg-sky-500 px-3 py-1.5 font-medium text-slate-950 hover:bg-sky-400 transition">
+            Download ZIP
+          </a>
+          <span class="text-slate-500">
+            See /docs/mdoc-audit-suite for usage details.
+          </span>
+        </div>
+      </section>
+
+      <!-- Placeholder for future tools -->
+      <section class="rounded-xl border border-slate-800 bg-slate-900/60 px-4 py-3">
+        <h2 class="font-semibold text-slate-50 mb-1">Additional Tools</h2>
+        <p class="text-xs text-slate-300 mb-1">
+          Additional RezScan utilities and agents will be published here as they are finalized.
+        </p>
+        <p class="text-[0.7rem] text-slate-500">
+          Need access to a specific tool or build? Contact:
+          <a href="mailto:Kenneth.Shaw@RezScan.net" class="text-sky-300 hover:text-sky-200 underline">
+            Kenneth.Shaw@RezScan.net
+          </a>
+        </p>
+      </section>
+    </div>
+
+    <footer class="mt-8 pt-4 border-t border-slate-800 text-[0.7rem] text-slate-500">
+      © <span id="year"></span> RezScan. Use of these tools is subject to your agency policies and applicable law.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
